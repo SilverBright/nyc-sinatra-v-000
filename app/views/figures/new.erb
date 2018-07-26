@@ -4,11 +4,11 @@
 
   <p><label>Figure: </label><input type="text" name="figure[name]" id="figure_name"></p>
 
-  <p>Choose an existing landmark and title:</p>
+  <p>Choose a landmark and title:</p>
 
-  <% Landmark.all.each do |landmark| %>
+  <p><% Landmark.all.each do |landmark| %>
     <input type="checkbox" name="figure[landmark_ids][]" value="<%= landmark.id %>", id="landmark_<%= landmark.id %>"><%= landmark.name %></input>
-  <% end %>
+  <% end %></p>
 
   <% Title.all.each do |title| %>
     <input type="checkbox" name="figure[title_ids][]" value="<%= title.id %>", id="title_<%= title.id %>"><%= title.name %></input>
