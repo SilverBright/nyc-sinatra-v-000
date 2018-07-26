@@ -10,9 +10,9 @@
     <input type="checkbox" name="figure[landmark_ids][]" value="<%= landmark.id %>", id="landmark_<%= landmark.id %>"><%= landmark.name %></input>
   <% end %></p>
 
-  <% Title.all.each do |title| %>
+  <p><% Title.all.each do |title| %>
     <input type="checkbox" name="figure[title_ids][]" value="<%= title.id %>", id="title_<%= title.id %>"><%= title.name %></input>
-  <% end %>
+  <% end %></p>
 
   <p>Add a new landmark and/or title:</p>
   <p><label>New Landmark Name: </label><input type="text" name="landmark[name]" id="new_landmark"> and Year Completed: <input type="text" name="landmark[year_completed]"></p>
