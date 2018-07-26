@@ -10,7 +10,6 @@
     <input type="checkbox" name="figure[landmark_ids][]" value="<%= landmark.id %>", id="landmark_<%= landmark.id %>"><%= landmark.name %></input>
   <% end %></p>
 
-  <br></br>
 
   <p><% Title.all.each do |title| %>
     <input type="checkbox" name="figure[title_ids][]" value="<%= title.id %>", id="title_<%= title.id %>"><%= title.name %></input>
