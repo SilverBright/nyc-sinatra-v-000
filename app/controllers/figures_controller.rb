@@ -27,12 +27,12 @@ class FiguresController < ApplicationController
     erb :'/figures/index'
   end
 
-  # get '/figures/:id' do
-  #   @figure = Figure.find(params[:id])
-  #   @titles = @figure.titles
-  #   @landmarks = @figure.landmarks
-  #   erb :'figures/show'
-  # end
+  get '/figures/:id' do
+    @figure = Figure.find(params[:id])
+    @titles = @figure.titles
+    @landmarks = @figure.landmarks
+    erb :'figures/show'
+  end
   #
   # get '/figures/:id/edit' do
   #   @figure = Figure.find(params[:id])
