@@ -6,7 +6,7 @@
 
   <p>Choose a landmark and title:</p>
 
-  <p><% Landmark.all.each do |landmark| %>
+  <p><% Landmark.all.each do |landmark| %> Landmarks: 
     <input type="checkbox" name="figure[landmark_ids][]" value="<%= landmark.id %>", id="landmark_<%= landmark.id %>"><%= landmark.name %></input>
   <% end %></p>
 
